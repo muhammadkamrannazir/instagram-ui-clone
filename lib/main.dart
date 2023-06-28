@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram/screens/home.dart';
+import 'package:instagram/screens/profile.dart';
 
 void main() {
   runApp(
@@ -12,10 +12,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Instagram',
-      home: HomeScreen(),
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.black,
+        appBarTheme: const AppBarTheme(backgroundColor: Colors.black),
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(color: Colors.white),
+        ),
+      ),
+      home: const ProfileScreen(),
     );
   }
 }

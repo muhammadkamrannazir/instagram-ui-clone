@@ -10,14 +10,14 @@ class StatusAvatarWidget extends StatelessWidget {
     required this.statusUploaderImage,
     super.key,
   });
-  
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 5, right: 5),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
         children: [
           CircleAvatar(
             radius: 35,

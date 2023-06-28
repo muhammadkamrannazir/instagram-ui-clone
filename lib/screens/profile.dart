@@ -97,7 +97,7 @@ class ProfileScreen extends StatelessWidget {
                 statusUploaderImage: 'assets/add.png',
               ),
             ],
-          )
+          ),
         ],
       ),
     );
